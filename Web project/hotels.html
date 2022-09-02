@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        complete responsive tour and travel agency website design tutorial
+    </title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 70%;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: 0.4;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0.4;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+
+<body>
+    <!-- header section starts  -->
+
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>ravel</a>
+
+        <nav class="navbar">
+            <a href="/home.html">Home</a>
+            <a href="/things_to_do.html">Things to do</a>
+            <a href="/pubs_bar.html">Pub&Night-Life</a>
+            <a href="/trek.html">Trekking Spots</a>
+            <a href="/hotels.html">Hotels</a>
+            <a href="/historical_places.html">Historical Places</a>
+        </nav>
+
+        <!-- <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here..." />
+            <label for="search-bar" class="fas fa-search"></label>
+        </form> -->
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- login form container  -->
+
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email" />
+            <input type="password" class="box" placeholder="enter your password" />
+            <input type="submit" value="login now" class="btn" />
+            <input type="checkbox" id="remember" />
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have and account? <a href="#">register now</a></p>
+        </form>
+    </div>
+
+    <!-- header section ends -->
+
+    <br /><br /><br /><br /><br /><br />
+    <img src="https://images.unsplash.com/photo-1545652985-5edd365b12eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dHJla3xlbnwwfHwwfHw%3D&w=1000&q=80"
+        alt="" style="width: 100%;">
+
+
+    <!-- <h1 style="text-align: center">Insert a good pic of the content</h1> -->
+    <br /><br /><br /><br /><br /><br />
+
+
+
+    </h1>
+
+    <div class="card">
+        <div class="info-c1">
+            <div class="info1">
+                <h1 style="font-size: 30px; text-align: center;">MTR</h1>
+                <br>
+                <p style="font-size: 15px;">Mavalli Tiffin Rooms’ journey begins in 1924, when three brothers decided to
+                    venture into the city’s then nascent F&B business. Today, MTR brings in the crowds from around the
+                    world and they have numerous outlets around the city. It’s like an old two-storeyed complex that has
+                    halls
+                    for various occasions and meals.
+                    <br><br>
+                    Most patrons visit MTR in the wee hours of the morning. Here, you can get your morning kick of some
+                    piping hot masala dosas doused in homemade ghee, blanketing a hearty onion-packed aloogadde palya.
+                    Their puffed up pooris resembling oxygen bags of bliss are a more greasy encounter, as they come
+                    with a gravy of potato sagu and chutney.
+                </p>
+            </div>
+            <div class="pic1" style="margin-top: -276px;"><img class="images"
+                    src="https://thefoodietales.com/wp-content/uploads/2018/05/bola600.jpg" alt=""></div>
+        </div>
+    </div>
+    <br />
+    <div class="card">
+        <div class="info-c2">
+            <div class="info2">
+
+                <h1 style="font-size: 30px; text-align: center;">Mangalore Pearl</h1>
+                <br>
+                <div>
+                    <p style="font-size: 15px;">
+
+                        For people who craved for homely food, there were just a handful of people
+                        serving Mangalorean delicacies. That's when Steven Pinto quit his job in an IT firm to extend
+                        the hospitality of serving Mangalorean delicacies beyond his family and friends to the public
+                        who also loved seafood as much as he did. The restaurant has become a household name
+                        among Mangaloreans in Bangalore in particular and seafood lovers in general.
+                        <br><br>
+                        Mangalore is home to a variety of cultures. The people of the city are known
+                        for their warmth and welcoming spirit. This is the feeling one gets at Mangalore Pearl. The
+                        range of food includes seafood, chicken, mutton and pork cooked in different styles. At
+                        Mangalore Pearl, the aim is dual - to offer Mangaloreans a home away from home and to introduce
+                        the world at large to the tasty Mangalorean cuisine.
+                    </p>
+                </div>
+
+
+
+            </div>
+            <div class="pic2" style="margin-top: -316px;"><img class="images"
+                    src="https://media-cdn.tripadvisor.com/media/photo-s/0c/44/a5/a8/caricatures-depicting.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <br /><br /><br />
+    <div class="card">
+        <div class="info-c1">
+            <div class="info1">
+                <h1 style="font-size: 30px; text-align: center;">Miller's 46</h1>
+                <br>
+                <div>
+                    <p style="font-size: 15px;">
+                        A themed restaurant that looks to invoke the wild, wild west, Millers 46 has little room for the
+                        delicate in its decor and on its menu. . Heavy wooden chairs, wheels and wooden barrels hanging
+                        from the
+                        roof, showpiece animal skulls, and cowboy figurines standing resolutely in the corner – you’ll
+                        see it all.
+                        <br><br>
+                        The Big Boy Texas
+                        T-Bone Steak is one of their classics and a meat lover’s delight. What you get is a hunk of meat
+                        (a fillet and a strip – a type of cut that comes with a layer of fat on top – rendered
+                        together). Also, don’t even think about asking for a bite of
+                        our simple Fillet Mignon With Mushroom Sauce. Now, if you’re a chicken
+                        ‘steak’ sort, opt for the Jamaican Pepper one that really ups the spice, but without going
+                        overboard.
+                    </p>
+                </div>
+            </div>
+            <div class="pic1" style="margin-top: -315px;"><img class="images"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDGCNsdpVJXCW7EnOIWZVdUyIi0Hkwn482_g&usqp=CAU"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="card">
+        <div class="info-c2">
+            <div class="info2">
+                <h1 style="font-size: 30px; text-align: center;">Corner Ice Cream House</h1>
+                <br>
+                <p style="font-size: 15px;">
+                    Another eating joint that has founded itself only at the turn of the millennium, Corner House Ice
+                    Cream is a sweet delight that goes on doing what it does best in providing some of the best Hot
+                    Chocolate Fudges, and Brownie Sundaes in Bangalore.
+                    <br><br> Located in Kormangala in bangalore, this place is very famous for Hot Chocolate Fudge,
+                    Brownie Sundae, Apple Pies and many oyher delicious foods.
+                </p>
+            </div>
+            <div class="pic2" style="margin-top: -216px;"><img class="images"
+                    src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2017/10/Corner-House-Koramangala.jpg"
+                    alt=""></div>
+        </div>
+    </div>
+    <br /><br /><br>
+    <div class="card">
+        <div class="info-c1">
+            <div class="info1">
+                <h1 style="font-size: 30px; text-align: center;">Olive's Kitchen</h1>
+                <br>
+                <p style="font-size: 15px;">
+
+                    A beautiful evening and a peaceful dinner can be spent very well here. Its
+                    outdoor seating has a blissful ambience while the indoor one has a calm and cozy vibe. Both the
+                    areas being perfect for long conversations,they provide lip smacking meals and a good time with
+                    loved ones. Recommended - Hazelnut Crunch Cake, Red Sauce Pasta.
+                </p>
+            </div>
+            <div class="pic1" style="margin-top: -155px;"><img class="images"
+                    src="https://b.zmtcdn.com/data/pictures/2/50742/98935f39987c1ea60d31bea107670883.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="card">
+        <div class="info-c2">
+            <div class="info2">
+                <h1 style="font-size: 30px; text-align: center;">JW Kitchen</h1>
+                <br>
+                <p style="font-size: 15px;">Located in the lavishing place of Bangalore, this place is very famous for
+                    live music, open air seating, and delicious food. Dozen Mezze, Mediterranean Kebab Platter,
+                    Signature Pomegranate Chicken are some foods which are worsth tasting at this place. All-day
+                    International restaurant offering an a la carte menu and Sunday
+                    brunch at a luxury hotel. JW kitchen has everything from soups, salads, starters to desi dishes and
+                    continental food as well. Their desserts are not to be missed out.
+                </p>
+            </div>
+            <div class="pic2" style="margin-top: -195px;"><img class="images"
+                    src="https://1.bp.blogspot.com/-GVN-Prg9Abs/W9k3iq6DTyI/AAAAAAAADSo/JJ0aTegqjRELn2G73HF9uQCFx4u3vSsgwCLcBGAs/s1600/44846130_1939433179474202_8667932641204371456_n.jpg"
+                    alt=""></div>
+        </div>
+    </div><br><br>
+    <br />
+    <div class="card">
+        <div class="info-c1">
+            <div class="info1">
+                <h1 style="font-size: 30px; text-align: center;">Brahmin’s Coffee Bar</h1>
+                <br>
+                <p style="font-size: 15px;">The best in its class of traditional south Indian food can be found in the
+                    Brahmin’s Coffee Bar at Basavanagudi in Bangalore. It offers steamingly hot rice idlis which are
+                    soft and crispy vadas. They also serve a variety of dishes here but the local favorite is surely the
+                    Idly-Vada combo. Located in Basavanagudithis place is very popular for very very tasty food at very
+                    minimum cost.
+                </p>
+            </div>
+            <div class="pic1" style="margin-top: -175px;"><img class="images"
+                    src="https://www.holidify.com/blog/wp-content/uploads/2014/07/coffe.jpg" alt=""></div>
+        </div>
+    </div>
+    <br />
+
+    <br />
+    <div class="card">
+        <div class="info-c2">
+            <div class="info2">
+                <h1 style="font-size: 30px; text-align: center;">Airlines Hotel</h1>
+                <br>
+                <p style="font-size: 15px;">An old charm of Bangalore , it is always filled with crowd in the early
+                    hours of the day. Enjoying the morning breakfast under the shades of a Banyan tree gives a perfect
+                    start to the day. From South Indianto North Indian, the place caters every kind of dishes, making it
+                    great for foodies that like variety.
+                </p>
+            </div>
+            <div class="pic2" style="margin-top: -140px;"><img class="images"
+                    src="https://im.whatshot.in/img/2019/Mar/3-a-cropped-1552037074.png" alt="">
+            </div>
+        </div>
+    </div><br><br>
+
+
+    <br />
+
+
+
+
+    <!-- footer section  -->
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>About Us</h3>
+                <p>
+                    This site is created and managed by Joel Dsouza, Kiran SM and Kishan
+                    KS, <br />
+                    third semester students of CS Engineering branch, <br />
+                    PES University, Bangalore <br />
+                </p>
+            </div>
+            <!-- <div class="box">
+          <h3>branch locations</h3>
+          <a href="#">india</a>
+          <a href="#">USA</a>
+          <a href="#">japan</a>
+          <a href="#">france</a>
+        </div> -->
+            <!-- <div class="box" style="margin-top: -12px">
+                <h3 style="margin-left: 110px">MENU</h3>
+                <div class="box1">
+                    <a href="#">Home</a>
+                    <a href="#">Do & See</a>
+                    <a href="#">Pub & Night Life</a>
+                    <a href="#">Restaurants</a>
+                    <a href="#">Trekking Spots</a>
+                    <a href="#">How to Reach</a>
+                </div>
+                <br /><br /><br />
+                <div class="box2" style="margin-left: 200px; margin-top: -225px">
+                    <a href="#">Cafes & Dine-Ins</a>
+                    <a href="#">Resorts & Hotels</a>
+                    <a href="#">Places of Religious Interest</a>
+                    <a href="#">Cafes </a>
+                    <a href="#">Travel Info</a>
+                </div>
+            </div> -->
+            <!-- <div class="box">
+          <h3>follow us</h3>
+          <a href="#">facebook</a>
+          <a href="#">instagram</a>
+          <a href="#">twitter</a>
+          <a href="#">linkedin</a>
+        </div> -->
+        </div>
+
+        <h1 class="credit">
+            Created and managed by <span> Like Home Boys </span> | All Rights
+            Reserved!!
+        </h1>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
